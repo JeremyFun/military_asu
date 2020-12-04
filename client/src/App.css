@@ -1,0 +1,38 @@
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+th {
+    font-family: "Times New Roman";
+    font-weight: bold!important;
+    background-color: #31bc86!important;
+    color: white!important;
+}
+
+.MuiTableCell-body div{
+    color: black;
+    font-style: italic;
+    font-family: "Roboto Light";
+}
+
+.sc-eCssSg {
+    margin: 70px auto!important;
+}
+
+.dulmlb {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.dulmlb:hover {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
