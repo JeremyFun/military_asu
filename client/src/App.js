@@ -6,11 +6,6 @@ import { Header, DropZone, TableComponent } from './components'
 import { store } from './components/lib/store'
 
 const AppWrapper = styled.div`
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
-  //align-items: center;
-  //font-family: monospace;
 `
 
 export const App = () => {

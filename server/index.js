@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 8080;
+const cors = require('cors')
 require('./src/database');
 
 const bodyParser = require('body-parser');
@@ -12,10 +13,15 @@ app.use(
         extended: true
     })
 );
+app.use(cors())
 app.use(bodyParser.json());
 
 // app.use('/posts', postRouter);
 app.use('/table', tableRouter);
+
+app.get('/', (req, res) => {
+    return res.send("Hello world")
+})
 
 
 app.listen(PORT, function () {

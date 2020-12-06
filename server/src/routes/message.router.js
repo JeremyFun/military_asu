@@ -6,7 +6,7 @@ const db = require('../database')
 tableRouter.post('/', (req, res) => {
     const newEntry = req.body
     db.collection("data")
-        .deleteMany({})
+        .deleteMany()
     db.collection("data")
         .insertMany(newEntry)
     return res.status(200).json({

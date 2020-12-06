@@ -63,7 +63,7 @@ export const  DropZone = () => {
     reader.readAsArrayBuffer(f)
   }
 
-  const handleFile = file => {
+  const handleFile = async (file) => {
     const reader = new FileReader()
 		const rABS = !!reader.readAsBinaryString
 		reader.onload = e => {
